@@ -1,0 +1,28 @@
+Classes
+  Game
+  Players
+  Questions
+
+Game role:  store game state(start, end)
+            store and assign turns 
+            manage current player
+            contain game loop
+
+
+Game methods: initialize(player 1, player 2)
+              start and end Game
+              rotate turns
+              retrieve question and answer
+              assign current player
+              game loop
+
+
+Players role: store and assign lives
+
+Player methods: assign lives
+
+Questions role: store and assign questions
+                store and assign answers
+
+Questions method: create question
+                  create answer
