@@ -15,6 +15,11 @@ class Game
     @current_player = @p1
     puts "#{@current_player.name} you will go first:"
   end
+  
+  def ask_question
+    @question = Questions.new
+    @question.ask_question(@current_player)
+  end
 
   def next_turn
     @current_player = (current_player == @p1) ? @p2 : @p1
