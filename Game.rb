@@ -2,7 +2,7 @@ require './Player.rb'
 require './Questions.rb'
 
 class Game 
-  attr_accessor :current_player
+  attr_accessor :current_player, :p1, :p2
   def initialize
     puts "Welcome to the Ruby Math Game!"
     puts "Please enter a name for player 1:"
