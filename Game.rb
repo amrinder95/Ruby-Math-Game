@@ -22,6 +22,8 @@ class Game
   end
 
   def next_turn
+    return if end?
+    
     @current_player = (current_player == @p1) ? @p2 : @p1
     puts "#{@current_player.name} it is now your turn."
   end
