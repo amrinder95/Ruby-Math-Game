@@ -10,3 +10,4 @@ until game.end?
 end
 
 puts "End of the game!"
+puts "#{game.current_player.name} has 0 lives left!"

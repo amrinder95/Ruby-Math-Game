@@ -23,7 +23,8 @@ class Game
 
   def next_turn
     return if end?
-    
+    puts "----- NEW TURN -----"
+    puts "Current score: #{@p1.name} - #{@p1.score} | #{@p2.name} - #{@p2.score}"
     @current_player = (current_player == @p1) ? @p2 : @p1
     puts "#{@current_player.name} it is now your turn."
   end

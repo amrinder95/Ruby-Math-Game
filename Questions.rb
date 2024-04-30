@@ -12,6 +12,7 @@ class Questions
     user_answer = gets.chomp.to_i
     if user_answer == @answer
       puts "Correct!"
+      player.add_score
     else 
       puts "Incorrect!"
       player.remove_life
