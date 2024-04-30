@@ -1,12 +1,12 @@
 class Player
-  attr_accessor :name, :lives
+  attr_reader :name, :lives
   def initialize(name)
     @name = name
     @lives = 3
   end
 
   def remove_life
-    self.lives - 1
+    @lives -= 1
   end
   
 end

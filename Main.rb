@@ -2,7 +2,7 @@ require './Game'
 require './Player'
 require './Questions'
 
-game1 = Game.new
+game = Game.new
 
 
-game1.end
+puts "End of the game!"
